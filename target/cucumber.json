@@ -1,0 +1,150 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6835763700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Common.setup()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "All test inherits this step",
+        "description": "",
+        "id": "common-steps;all-test-inherits-this-step",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6043189500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on application page",
+            "match": {
+              "location": "Common.iAmOnApplicationPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      }
+    ],
+    "name": "common steps",
+    "description": "",
+    "id": "common-steps",
+    "keyword": "Feature",
+    "uri": "Common.feature"
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Common steps",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2400461800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on application page",
+            "match": {
+              "location": "Common.iAmOnApplicationPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 195000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Common.setup()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Login with invalid credentials should return error",
+        "description": "",
+        "id": "create-an-invalid-login--invalidlogin1;login-with-invalid-credentials-should-return-error",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1246442700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click the Sign in button",
+            "match": {
+              "location": "InvalidLogin1.iClickTheSignInButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 46742100,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id\u003d\"passwd\"]\"}\n  (Session info: chrome\u003d85.0.4183.102)\n  (Driver info: chromedriver\u003d85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}),platform\u003dWindows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 41 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.0.1\u0027, revision: \u00271969d75\u0027, time: \u00272016-10-18 09:49:13 -0700\u0027\nSystem info: host: \u0027LAPTOP-7CS378RS\u0027, ip: \u0027192.168.10.42\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002714.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, hasTouchScreen\u003dfalse, platform\u003dXP, acceptSslCerts\u003dfalse, goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:65321}, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003dignore, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}), userDataDir\u003dC:\\Users\\antho\\AppData\\Local\\Temp\\scoped_dir20496_1842064401}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, strictFileInteractability\u003dfalse, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d85.0.4183.102, browserConnectionEnabled\u003dfalse, proxy\u003d{}, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue, webauthn:virtualAuthenticators\u003dtrue}]\nSession ID: 87a026bb8356438a7fb3528c73ed17f3\n*** Element info: {Using\u003dxpath, value\u003d//*[@id\u003d\"passwd\"]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy19.sendKeys(Unknown Source)\r\n\tat PageObject.InvalidLogin1Locators.enterPassword(InvalidLogin1Locators.java:21)\r\n\tat StepDefinition.InvalidLogin1.iEnterInvalidCredentials(InvalidLogin1.java:27)\r\n\tat ✽.And I enter Invalid credentials(InvalidLogin1.feature:9)\r\n",
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "I enter Invalid credentials",
+            "match": {
+              "location": "InvalidLogin1.iEnterInvalidCredentials()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "I click on login button",
+            "match": {
+              "location": "InvalidLogin1.iClickOnLoginButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "error message should be displayed",
+            "match": {
+              "location": "InvalidLogin1.errorMessageShouldBeDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Create an Invalid Login _InValidLogin1",
+    "description": "",
+    "id": "create-an-invalid-login--invalidlogin1",
+    "keyword": "Feature",
+    "uri": "InvalidLogin1.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@InValidLogin1"
+      }
+    ]
+  }
+]
